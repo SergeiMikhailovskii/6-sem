@@ -1,13 +1,13 @@
 package com.mikhailovskii.lab1;
 
-public class Main {
+public class Railway {
 
     public static void main(String[] args) {
         String m = "Cryptography";  // Input string
         String c = "";  // Encrypted string
 
         int length = m.length();
-        int k = 4;
+        int k = 3;
 
         String[][] arr = new String[k][length];
 

@@ -13,7 +13,7 @@ public class Server implements RemoteInterface {
         try {
             RemoteInterface stub = (RemoteInterface) UnicastRemoteObject.exportObject(server, 0);
             Registry registry = LocateRegistry.createRegistry(1087);
-            registry.bind("Hello", stub);
+            registry.bind("task", stub);
             System.out.println("Server is ready");
         } catch (RemoteException | AlreadyBoundException e) {
             e.printStackTrace();

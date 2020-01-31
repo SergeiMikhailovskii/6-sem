@@ -11,11 +11,13 @@ public class Client {
     }
 
     public static void main(String[] args) {
+        final String str = "abcdefghijklmnop";
+
         try {
             String host = (args.length < 1) ? "127.0.0.1" : args[0];
             Registry registry = LocateRegistry.getRegistry(host, 1087);
-            RemoteInterface stub = (RemoteInterface) registry.lookup("Hello");
-            String response = stub.replaceAllVowelsWithStars("abcdefghijklmnop");
+            RemoteInterface stub = (RemoteInterface) registry.lookup("task");
+            String response = stub.replaceAllVowelsWithStars(str);
             System.out.println("Response: " + response);
         } catch (RemoteException | NotBoundException e) {
             e.printStackTrace();
