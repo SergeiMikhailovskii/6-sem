@@ -1,4 +1,4 @@
-package com.mikhailovskii.lab1;
+package com.mikhailovskii.lab1.keyword;
 
 public class Keyword {
 

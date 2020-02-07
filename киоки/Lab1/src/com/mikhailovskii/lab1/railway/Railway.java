@@ -1,4 +1,4 @@
-package com.mikhailovskii.lab1;
+package com.mikhailovskii.lab1.railway;
 
 public class Railway {
 
