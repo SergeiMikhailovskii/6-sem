@@ -6,6 +6,15 @@ public class Grid {
         String m = "ЭТОЛЕКЦИЯПОКРИПТ";
         final int size = 4;
 
+        int sizeTo16 = 16 - m.length() % 16;
+        if (m.length() % 16 != 0) {
+            for (int i = 0;i<sizeTo16;i++){
+                m+='*';
+            }
+        }
+
+        System.out.println(m);
+
         final Cell[] fourOnFourGrid = {
                 new Cell(0, 0),
                 new Cell(1, 3),

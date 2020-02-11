@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df29193-b0ca-42ab-8498-9b6117d5a920" name="Default Changelist" comment="Added gitignore">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2/Lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../киоки/Lab1/out/production/Lab1/com/mikhailovskii/lab1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Server.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,7 +107,9 @@
       <updated>1580151753087</updated>
       <workItem from="1580151755675" duration="1246000" />
       <workItem from="1580233860384" duration="74000" />
-      <workItem from="1580494800973" duration="289000" />
+      <workItem from="1580494800973" duration="927000" />
+      <workItem from="1580720384617" duration="3835000" />
+      <workItem from="1580725905668" duration="673000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore">
       <created>1580494852723</created>
@@ -98,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580494852723</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added gitignore">
+      <created>1580495095977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580495095977</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added gitignore">
+      <created>1580722263381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580722263381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -102,6 +102,8 @@ public class Keyword {
             }
         }
 
+        output = output.trim();
+
         System.out.println("OUTPUT: " + output);
 
     }
@@ -155,6 +157,8 @@ public class Keyword {
                 output += mMatrix[i][j];
             }
         }
+
+        output = output.trim();
 
         System.out.println("OUTPUT: " + output);
 
