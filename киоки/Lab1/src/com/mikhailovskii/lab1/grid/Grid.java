@@ -3,13 +3,13 @@ package com.mikhailovskii.lab1.grid;
 public class Grid {
 
     public static void main(String[] args) {
-        String m = "ЭТОЛЕКЦИЯПОКРИПТ";
+        String m = "ЭТОЛЕКЦИЯПОКР";
         final int size = 4;
 
         int sizeTo16 = 16 - m.length() % 16;
         if (m.length() % 16 != 0) {
-            for (int i = 0;i<sizeTo16;i++){
-                m+='*';
+            for (int i = 0; i < sizeTo16; i++) {
+                m += '*';
             }
         }
 
@@ -26,39 +26,24 @@ public class Grid {
 
         int parts = m.length() / size;
 
-        for (int i = 0; i < parts; i++) {
-            for (int j = 0; j < size; j++) {
-                matrix[fourOnFourGrid[j].getLine()][fourOnFourGrid[j].getColumn()] = m.charAt(i * size + j);
-            }
-            showMatrix(matrix, size);
-            System.out.println();
-            matrix = rotateRight(matrix, size);
-        }
-
-        showMatrix(matrix, size);
-
-        String output = "";
-
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                output += matrix[i][j];
-            }
-        }
+        String output = encode(m, size, fourOnFourGrid, matrix, parts);
 
         System.out.println(output);
 
-        matrix = new char[size][size];
 
-        for (int i = 0; i < parts; i++) {
+        String encrypted = "";
+
+        matrix = new char[size][size];
+        for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                matrix[i][j] = output.charAt(i * size + j);
+                char curSymbol = output.charAt(i * size + j);
+                matrix[i][j] = curSymbol;
             }
         }
 
-        String encrypted = "";
-        for (int i = 0; i<parts;i++) {
-            for (int j = 0; j<size;j++) {
-                encrypted+=matrix[fourOnFourGrid[j].getLine()][fourOnFourGrid[j].getColumn()];
+        for (int i = 0; i < parts; i++) {
+            for (int j = 0; j < size; j++) {
+                encrypted += matrix[fourOnFourGrid[j].getLine()][fourOnFourGrid[j].getColumn()];
             }
             matrix = rotateRight(matrix, size);
             System.out.println();
@@ -69,6 +54,38 @@ public class Grid {
 
         System.out.println(encrypted);
 
+        char[] encryptedArr = encrypted.toCharArray();
+        for (int i = 0; i<encrypted.length();i++){
+            if (encryptedArr[i] == '*'){
+                encryptedArr[i] = ' ';
+            }
+        }
+        encrypted = new String(encryptedArr);
+        encrypted = encrypted.trim();
+        System.out.println(encrypted);
+
+
+    }
+
+    private static String encode(String m, int size, Cell[] fourOnFourGrid, char[][] matrix, int parts) {
+        String output = "";
+
+        for (int x = 0; x < m.length() / 16; x++) {
+            for (int i = 0; i < parts; i++) {
+                for (int j = 0; j < size; j++) {
+                    matrix[fourOnFourGrid[j].getLine()][fourOnFourGrid[j].getColumn()] = m.charAt(i * size + j);
+                }
+                matrix = rotateRight(matrix, size);
+            }
+
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
+                    output += matrix[i][j];
+                }
+            }
+
+        }
+        return output;
     }
 
     private static char[][] rotateRight(char[][] grid, int gridSize) {

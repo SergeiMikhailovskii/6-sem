@@ -35,6 +35,7 @@ public class LabEjb {
                 }
             }
         }
+
         if (faculties.length >= 2) {
             smallestFaculties.add(faculties[0].toString());
             smallestFaculties.add(faculties[1].toString());
