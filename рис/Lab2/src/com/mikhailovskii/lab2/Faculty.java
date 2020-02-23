@@ -12,15 +12,15 @@ public class Faculty {
         this.payment = payment;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    int getSize() {
+    public int getSize() {
         return size;
     }
 
-    int getPayment() {
+    public int getPayment() {
         return payment;
     }
 

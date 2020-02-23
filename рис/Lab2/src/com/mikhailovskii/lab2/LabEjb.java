@@ -16,15 +16,15 @@ public class LabEjb {
 
     public double calculatePaymentForSeveralSemesters(double period, String facultyName) throws FacultyNotFoundException {
         for (Faculty faculty : faculties) {
-            if (faculty.getName().equals(facultyName)) {
+            if (faculty.getName().equalsIgnoreCase(facultyName)) {
                 return faculty.getPayment() * period;
             }
         }
         throw new FacultyNotFoundException(facultyName);
     }
 
-    public ArrayList<String> getTwoSmallestFaculties() {
-        ArrayList<String> smallestFaculties = new ArrayList<>();
+    public ArrayList<Faculty> getTwoSmallestFaculties() {
+        ArrayList<Faculty> smallestFaculties = new ArrayList<>();
 
         for (int i = 0; i < faculties.length - 1; i++) {
             for (int j = i + 1; j < faculties.length; j++) {
@@ -37,8 +37,8 @@ public class LabEjb {
         }
 
         if (faculties.length >= 2) {
-            smallestFaculties.add(faculties[0].toString());
-            smallestFaculties.add(faculties[1].toString());
+            smallestFaculties.add(faculties[0]);
+            smallestFaculties.add(faculties[1]);
         }
 
         return smallestFaculties;

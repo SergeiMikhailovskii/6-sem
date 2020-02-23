@@ -12,14 +12,14 @@
 </head>
 <body>
 <p>
-<form>
-    Period: <input type="number" name="period" size="50"> <br>
-    Faculty: <input type="text" name="faculty" size="50"> <br>
-    <a href="${pageContext.request.contextPath}/calculatePaymentForSeveralSemesters?period=<%=request.getParameter("period")%>&faculty=<%=request.getParameter("faculty")%>">Calculate
-        payment for several semesters</a>
-    <br>
-    <a href="${pageContext.request.contextPath}/showTwoSmallestFaculties">Show two smallest faculties</a>
-    <input type="submit">
+<form method="get" action="${pageContext.request.contextPath}/calculatePaymentForSeveralSemesters">
+    Period: <input type="number" name="period" value="${period}" size="50"> <br>
+    Faculty: <input type="text" name="faculty" value="${faculty}" size="50"> <br>
+    <button type="submit">Calculate payment for several semesters</button>
+</form>
+
+<form method="get" action="${pageContext.request.contextPath}/showTwoSmallestFaculties">
+    <button type="submit">Show two smallest faculties</button>
 </form>
 </p>
 </body>

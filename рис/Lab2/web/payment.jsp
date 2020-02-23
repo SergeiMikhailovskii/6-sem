@@ -11,6 +11,6 @@
     <title>Payment</title>
 </head>
 <body>
-
+    <h1>${payment}</h1>
 </body>
 </html>
