@@ -1,6 +1,6 @@
 package com.mikhailovskii.lab2;
 
-public class SDES {
+class SDES {
 
     private Keys keys;
 
@@ -18,7 +18,7 @@ public class SDES {
             {10, 01, 00, 11}
     };
 
-    public void setKeys(Keys keys) {
+    void setKeys(Keys keys) {
         this.keys = keys;
     }
 
@@ -66,7 +66,6 @@ public class SDES {
 
         row = numPart[4] * 2 + numPart[7];
         column = numPart[5] * 2 + numPart[6];
-
 
         P4Byte[2] = (byte) (S2[row][column] / 10);
         P4Byte[1] = (byte) (S2[row][column] % 10);

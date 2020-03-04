@@ -6,6 +6,16 @@ public class Main {
         Keys keys = new Keys();
         keys.generateKeys(0b10010_10011);
 
+        for (int i = 0; i < keys.getFirstKey().length; i++) {
+            System.out.print(keys.getFirstKey()[i]);
+        }
+        System.out.println();
+
+        for (int i = 0; i < keys.getSecondKey().length; i++) {
+            System.out.print(keys.getSecondKey()[i]);
+        }
+        System.out.println();
+
         SDES sdes = new SDES();
         sdes.setKeys(keys);
 

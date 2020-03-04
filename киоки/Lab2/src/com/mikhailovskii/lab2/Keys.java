@@ -23,8 +23,6 @@ public class Keys {
         firstKey = P8(shift);
         shift = shift(shift(keyArr));
         secondKey = P8(shift);
-
-
     }
 
     private byte[] binaryKeyToArray(int num) {
