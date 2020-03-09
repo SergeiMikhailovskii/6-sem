@@ -1,5 +1,6 @@
 package com.mikhailovskii.lab2;
 
+import javax.ejb.EJB;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,8 +12,8 @@ import java.io.IOException;
 @WebServlet("/calculatePaymentForSeveralSemesters")
 public class CalculatePaymentForSeveralSemestersServlet extends HttpServlet {
 
-    // @EJB
-    LabEjb ejb = new LabEjb();
+    @EJB
+    LabEjb ejb;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {

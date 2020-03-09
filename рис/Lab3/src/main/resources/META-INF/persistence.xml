@@ -1,0 +1,11 @@
+<persistence>
+    <persistence-unit name="EntityBean">
+        <jta-data-source>java:/DefaultDS</jta-data-source>
+        <properties>
+            <property name="hibernate.hbm2ddl.auto"
+                      value="create-drop"/>
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.HSQLDialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>

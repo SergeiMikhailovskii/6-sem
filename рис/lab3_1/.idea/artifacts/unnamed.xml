@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="root">
+      <element id="artifact" artifact-name="lab3_1:ear exploded" />
+      <element id="directory" name="lab3.jar" />
+      <element id="artifact" artifact-name="lab3_1:ejb exploded" />
+    </root>
+  </artifact>
+</component>
