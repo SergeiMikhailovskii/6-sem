@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Send message:" + sendMessage.toString());
 
         // Received message
-        Pair<String, Integer> receivedMessage = new Pair<>("БГУИР", 206);
+        Pair<String, Integer> receivedMessage = new Pair<>("БГУИР", 290);
 
         int receivedHash = PJW32Hash(receivedMessage.getFirstKey(), r);
         BigInteger sReceived = new BigInteger(String.valueOf(receivedMessage.getSecondKey())).pow(openKey.getFirstKey()).mod(new BigInteger(String.valueOf(openKey.getSecondKey())));
@@ -49,10 +49,10 @@ public class Main {
 
         for (int i = 0; i < input.length(); i++) {
             int symbol = (byte) input.charAt(i) - 15;
-            // Тк буквы ё в юникоде нету
-            if (symbol > 6) {
-                symbol++;
-            }
+//            // Тк буквы ё в юникоде нету
+//            if (symbol > 6) {
+//                symbol++;
+//            }
             hash = ((hash + symbol) * (hash + symbol)) % n;
         }
 
