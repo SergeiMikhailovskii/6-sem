@@ -39,7 +39,7 @@ public class Main {
 
         mArr[0] = (yp * p * mq + yq * q * mp) % n;
         mArr[1] = (n - mArr[0]);
-        mArr[2] = (yp * p * mq - yq * q *mp) % n;
+        mArr[2] = (yp * p * mq - yq * q * mp) % n;
         mArr[3] = n - mArr[2];
 
         for (int i : mArr) {

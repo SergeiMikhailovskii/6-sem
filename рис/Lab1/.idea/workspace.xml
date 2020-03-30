@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df29193-b0ca-42ab-8498-9b6117d5a920" name="Default Changelist" comment="Added gitignore">
-      <change afterPath="$PROJECT_DIR$/../Lab2/Lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../киоки/Lab1/out/production/Lab1/com/mikhailovskii/lab1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1/com/mikhailovskii/lab1/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/CourseWork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/src/main/java/com/mikhailovskii/ris_coursework/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/src/main/java/com/mikhailovskii/ris_coursework/FootballQuizBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/src/main/java/com/mikhailovskii/ris_coursework/HelloCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CourseWork/src/main/java/com/mikhailovskii/ris_coursework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../киоки/Lab3/src/com/mikhailovskii/lab3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../киоки/Lab3/src/com/mikhailovskii/lab3/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +116,7 @@
       <workItem from="1580494800973" duration="927000" />
       <workItem from="1580720384617" duration="3835000" />
       <workItem from="1580725905668" duration="673000" />
+      <workItem from="1584278393510" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore">
       <created>1580494852723</created>
