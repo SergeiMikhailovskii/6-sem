@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="lab5:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab5_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="lab5/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="lab5:war exploded" />
+      </element>
+      <element id="directory" name="ejb.jar">
+        <element id="artifact" artifact-name="lab5:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.17" />
+        <element id="library" level="project" name="Maven: javax.persistence:javax.persistence-api:2.2" />
+        <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+        <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:5.4.14.Final" />
+        <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.1.0.Final" />
+        <element id="library" level="project" name="EJB-3.2.2 (2)" />
+      </element>
+      <element id="jpa-descriptors" facet="lab5/jpa/JPA" />
+    </root>
+  </artifact>
+</component>

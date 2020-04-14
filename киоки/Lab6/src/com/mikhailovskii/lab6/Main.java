@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            BufferedImage image = ImageIO.read(new File("C:\\Users\\ASUS\\Desktop\\android.png"));
+            BufferedImage image = ImageIO.read(new File("C:\\Users\\ASUS\\Desktop\\android.bmp"));
             int width = image.getWidth();
             int height = image.getHeight();
 
@@ -45,12 +45,12 @@ public class Main {
 
             newImage.setRGB(0, 0, width, height, imageRGB, 0, width);
 
-            File outputFile = new File("C:\\Users\\ASUS\\Desktop\\output.png");
-            ImageIO.write(newImage, "png", outputFile);
+            File outputFile = new File("C:\\Users\\ASUS\\Desktop\\output.bmp");
+            ImageIO.write(newImage, "bmp", outputFile);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            image = ImageIO.read(new File("C:\\Users\\ASUS\\Desktop\\output.png"));
+            image = ImageIO.read(new File("C:\\Users\\ASUS\\Desktop\\output.bmp"));
             width = image.getWidth();
             height = image.getHeight();
 
