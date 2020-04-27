@@ -15,7 +15,7 @@
 
 <h:form>
     <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.name}" a:placeholder="Name"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.address}" a:placeholder="Address"/>
+    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.phoneNumber}" a:placeholder="Address"/>
     <h:commandButton value="Search users" action="#{newMB.moveToSearchCustomers()}"/>
 </h:form>
 
@@ -23,47 +23,14 @@
 
 <h:form>
     <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.name}" a:placeholder="Name"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.address}"
-                 a:placeholder="Address"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.stateCode}"
-                 a:placeholder="State Code"/>
+    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.phoneNumber}"
+                 a:placeholder="Phone Number"/>
     <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.discount}"
                  a:placeholder="Discount"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.creditLimit}"
-                 a:placeholder="Credit Limit"/>
+    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.eMail}"
+                 a:placeholder="eMail"/>
     <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.customer.zip}" a:placeholder="Zip"/>
     <h:commandButton value="Add customer" action="#{newMB.addCustomer()}"/>
-</h:form>
-
-<br/>
-
-<h:form>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.house.address}"
-                 a:placeholder="Address"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.house.flatsAmount}"
-                 a:placeholder="Flats amount"/>
-    <h:commandButton value="Add house" action="#{newMB.addHouse()}"/>
-</h:form>
-
-<br/>
-
-<h:form>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.person.name}" a:placeholder="Name"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.person.houseId}"
-                 a:placeholder="House Id"/>
-    <h:commandButton value="Add person" action="#{newMB.addPerson()}"/>
-</h:form>
-
-<br />
-
-<h:form>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.house.address}"
-                 a:placeholder="Address"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.house.flatsAmount}"
-                 a:placeholder="Flats amount"/>
-    <h:inputText required="true" requiredMessage="Fill the field" value="#{newMB.house.idHouse}"
-                 a:placeholder="ID"/>
-    <h:commandButton value="Delete house" action="#{newMB.deleteHouse()}"/>
 </h:form>
 
 </html>

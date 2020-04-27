@@ -17,9 +17,9 @@ public class SearchCustomerByStateCodeAndCreditLimitServlet extends HttpServlet 
         try {
             String stateCode = req.getParameter("stateCode");
             long creditLimit = Long.parseLong(req.getParameter("creditLimit"));
-            Context context = new InitialContext();
-            CustomerInterface customerInterface = (CustomerInterface) context.lookup(CustomerBean.class.getName());
-            Customer customer = customerInterface.getCustomerByStateCodeAndCreditLimit(stateCode, creditLimit);
+//            Context context = new InitialContext();
+//            CustomerInterface customerInterface = (CustomerInterface) context.lookup(CustomerBean.class.getName());
+//            Customer customer = customerInterface.getCustomerByStateCodeAndCreditLimit(stateCode, creditLimit);
             req.setAttribute("customer", customer);
             RequestDispatcher dispatcher = req.getRequestDispatcher("showAllCustomers.jsp");
             dispatcher.forward(req, resp);

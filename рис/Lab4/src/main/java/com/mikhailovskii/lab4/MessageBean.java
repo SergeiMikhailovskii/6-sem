@@ -11,12 +11,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-@MessageDriven(
-        activationConfig = {
-                @ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/jms/queue/MessMQ"),
-                @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue")
-        },
-        mappedName = "java:/jms/queue/MessMQ")
+@MessageDriven(activationConfig = {
+    @ActivationConfigProperty(propertyName = "clientId", propertyValue = "jms/Queue"),
+    @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "jms/Queue"),
+    @ActivationConfigProperty(propertyName = "subscriptionDurability", propertyValue = "Durable"),
+    @ActivationConfigProperty(propertyName = "subscriptionName", propertyValue = "jms/Queue"),
+    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue")
+})
 public class MessageBean implements MessageListener {
 
     private MessageDrivenContext context;

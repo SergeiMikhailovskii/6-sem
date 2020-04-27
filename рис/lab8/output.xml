@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+    <id>33</id>
+    <surname>Mikhailovskii</surname>
+    <name>Sergei</name>
+    <lastName>Ivanovich</lastName>
+    <dateOfBirth>2020-04-19 03:00:00</dateOfBirth>
+    <passwordSeries>1234567</passwordSeries>
+    <city>
+        <id>1</id>
+        <name>Minsk</name>
+    </city>
+    <addressFact>Minsk</addressFact>
+    <phoneNumber>2345678</phoneNumber>
+    <email>email1</email>
+    <isEmployed>false</isEmployed>
+    <position>Position1</position>
+    <addressRegistration>Minsk</addressRegistration>
+    <citizenship>
+        <id>1</id>
+        <name>Belorussian</name>
+    </citizenship>
+</response>

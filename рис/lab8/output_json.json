@@ -1,0 +1,22 @@
+{
+  "id": 34,
+  "surname": "Mikhailovskii",
+  "name": "Sergei",
+  "lastName": "Ivanovich",
+  "dateOfBirth": "2020-04-19 03:00:00",
+  "passwordSeries": "1234567",
+  "city": {
+    "id": 1,
+    "name": "Minsk"
+  },
+  "addressFact": "Minsk",
+  "phoneNumber": "2345678",
+  "email": "email1",
+  "isEmployed": false,
+  "position": "Position1",
+  "addressRegistration": "Minsk",
+  "citizenship": {
+    "id": 1,
+    "name": "Belorussian"
+  }
+}

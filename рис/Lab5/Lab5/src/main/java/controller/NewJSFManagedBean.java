@@ -1,7 +1,6 @@
 package controller;
 
-import additional_task.House;
-import additional_task.Person;
+
 import customer.Customer;
 import model.Model;
 
@@ -16,30 +15,14 @@ public class NewJSFManagedBean implements Serializable {
 
     private Model model = new Model();
     private List<Customer> customers;
-    private String address;
+    private String phoneNumber;
     private String name;
     private Customer customer = new Customer();
-    private House house = new House();
-    private Person person = new Person();
+
 
     public NewJSFManagedBean() {
     }
 
-    public House getHouse() {
-        return house;
-    }
-
-    public void setHouse(House house) {
-        this.house = house;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 
     public List<Customer> getCustomers() {
         return customers;
@@ -49,12 +32,12 @@ public class NewJSFManagedBean implements Serializable {
         this.customers = customers;
     }
 
-    public String getAddress() {
-        return address;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getName() {
@@ -72,13 +55,11 @@ public class NewJSFManagedBean implements Serializable {
     }
 
     public String moveToSearchCustomers() {
-        customers = model.findCustomers(name, address);
+        customers = model.findCustomers(name, phoneNumber);
         return "customers";
     }
 
-    public void deleteHouse() {
-        model.deleteHouse(house);
-    }
+
 
     public Customer getCustomer() {
         return customer;
@@ -90,14 +71,6 @@ public class NewJSFManagedBean implements Serializable {
 
     public void addCustomer() {
         model.addCustomer(customer);
-    }
-
-    public void addHouse() {
-        model.addHouse(house);
-    }
-
-    public void addPerson() {
-        model.addPerson(person);
     }
 
 }
